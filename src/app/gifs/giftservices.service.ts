@@ -13,6 +13,16 @@ export class GiftservicesService {
   }
 
   addGift(query:String){
-    this._giftHistorial.unshift(query);
+    if (!this._giftHistorial.includes(query)){
+      if (this._giftHistorial.length == 10){
+        this._giftHistorial.splice(0,1);
+        this._giftHistorial.unshift(query);
+      }
+      else{
+        this._giftHistorial.unshift(query);
+      }
+    }
   }
+
+  
 }
