@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GiftservicesService } from 'src/app/gifs/giftservices.service';
+import { GiftservicesService } from 'src/app/gifs/services/giftservices.service';
 
 @Component({
   selector: 'app-sidebar',
