@@ -12,4 +12,8 @@ export class SidebarComponent {
   get gift():String[]{
     return this.giftService.gift;
   }
+
+  giftClick(){
+    this.giftService.results
+  }
 }
